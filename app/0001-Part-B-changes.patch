@@ -1,0 +1,24 @@
+From 8903ede2fd85436a9b1fd2424c22381a41b3fc49 Mon Sep 17 00:00:00 2001
+From: lrugg <lrugg@missouriwestern.edu>
+Date: Sun, 6 Mar 2022 21:04:36 -0600
+Subject: [PATCH] Part B changes
+
+---
+ app/routes.py | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/app/routes.py b/app/routes.py
+index d22c2b7..687f08c 100644
+--- a/app/routes.py
++++ b/app/routes.py
+@@ -60,6 +60,6 @@ def loginAPI():
+         password = json_data["password"]
+     else:
+         return jsonify(Success=False)
+-    if username == 'byan' and password == '123':
++    if username == 'lrugg' and password == '567':
+         return jsonify(Success=True, uid=11)
+     return jsonify(Success=False)
+-- 
+2.31.1
+
